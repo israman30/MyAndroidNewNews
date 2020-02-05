@@ -19,12 +19,14 @@ class MainAdapter(val model: Model): RecyclerView.Adapter<CustomViewHolder>() {
         return model.articles.size
     }
 
+    // Renders the cell row with data info
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val cellForRow = layoutInflater.inflate(R.layout.video_row, parent, false)
         return  CustomViewHolder(cellForRow)
     }
 
+    // Populates-binds the view with json dat info fetched using Picasso library
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
 
         val article = model.articles.get(position)
@@ -45,14 +47,16 @@ class MainAdapter(val model: Model): RecyclerView.Adapter<CustomViewHolder>() {
 
 }
 
+
+// TAP ROW: - Custom view holder use an intent to present and pass data from activity to activity
 class CustomViewHolder(view: View, var articles: Articles? = null): RecyclerView.ViewHolder(view) {
 
     companion object {
         val URL_SITE_LINK = "url_link"
     }
+
     init {
         itemView.setOnClickListener {
-            println("TEST")
 
             val intent = Intent(itemView.context, CourseDetailActivity::class.java)
 
