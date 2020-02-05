@@ -96,7 +96,7 @@ ADDED from /Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/
 activity#com.example.youtube.CourseDetailActivity
 ADDED from /Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:21:9-26:20
 	android:label
-		ADDED from /Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:22:13-43
+		ADDED from /Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:22:13-40
 	android:launchMode
 		ADDED from /Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:23:13-43
 	android:name

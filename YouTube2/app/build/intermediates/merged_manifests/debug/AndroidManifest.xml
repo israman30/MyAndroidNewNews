@@ -31,7 +31,7 @@
         </activity>
         <activity
             android:name="com.example.youtube.CourseDetailActivity"
-            android:label="Course Details"
+            android:label="My New News"
             android:launchMode="singleTop" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

@@ -53,8 +53,8 @@
 32-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:21:9-26:20
 33            android:name="com.example.youtube.CourseDetailActivity"
 33-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:21:19-55
-34            android:label="Course Details"
-34-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:22:13-43
+34            android:label="My New News"
+34-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:22:13-40
 35            android:launchMode="singleTop" >
 35-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:23:13-43
 36            <meta-data

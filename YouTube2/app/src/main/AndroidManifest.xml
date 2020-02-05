@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CourseDetailActivity"
-            android:label="Course Details"
+            android:label="My New News"
             android:launchMode="singleTop">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>

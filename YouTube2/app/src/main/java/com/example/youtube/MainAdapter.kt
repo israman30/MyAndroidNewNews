@@ -10,8 +10,6 @@ import kotlinx.android.synthetic.main.video_row.view.*
 
 class MainAdapter(val model: Model): RecyclerView.Adapter<CustomViewHolder>() {
 
-    val videoTitles = listOf("One", "Two", "Three")
-
     // Return number of items in the cell
     override fun getItemCount(): Int {
         return model.articles.size

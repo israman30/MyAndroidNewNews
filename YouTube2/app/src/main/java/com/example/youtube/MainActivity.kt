@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        val toolBar = findViewById(R.Andr)
+
         recyclerView_main.layoutManager = LinearLayoutManager(this)
 
 
