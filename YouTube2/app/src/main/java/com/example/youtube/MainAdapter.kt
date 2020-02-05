@@ -1,6 +1,7 @@
 package com.example.youtube
 
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,9 +30,11 @@ class MainAdapter(val model: Model): RecyclerView.Adapter<CustomViewHolder>() {
         val article = model.articles.get(position)
         holder.itemView.textView_videoTitle.text = article.title
 
-//        val dateFormat = SimpleDateFormat(article.publishedAt)
-//        val dateString = dateFormat.format(article.publishedAt)
-        holder.itemView.textView_channelName.text = "by " + article.publishedAt
+
+        val formatter = SimpleDateFormat("yyyy-MM-dd")
+        val dateString = formatter.parse(article.publishedAt)
+
+        holder.itemView.textView_channelName.text = dateString.toString()
 
         val thumbnailArticleImageView = holder.itemView.imageView_videoThumbnail
         Picasso.get().load(article.urlToImage).into(thumbnailArticleImageView)
