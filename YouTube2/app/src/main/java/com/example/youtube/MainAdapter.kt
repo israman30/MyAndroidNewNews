@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.video_row.view.*
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainAdapter(val model: Model): RecyclerView.Adapter<CustomViewHolder>() {
 
@@ -26,6 +29,8 @@ class MainAdapter(val model: Model): RecyclerView.Adapter<CustomViewHolder>() {
         val article = model.articles.get(position)
         holder.itemView.textView_videoTitle.text = article.title
 
+//        val dateFormat = SimpleDateFormat(article.publishedAt)
+//        val dateString = dateFormat.format(article.publishedAt)
         holder.itemView.textView_channelName.text = "by " + article.publishedAt
 
         val thumbnailArticleImageView = holder.itemView.imageView_videoThumbnail
