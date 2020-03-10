@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         getData()
     }
 
-    fun getData() {
+    private fun getData() {
         val urlString = "https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=066d82458ed84eeeac28a86095ec88b9"
         val request = Request.Builder().url(urlString).build()
 
