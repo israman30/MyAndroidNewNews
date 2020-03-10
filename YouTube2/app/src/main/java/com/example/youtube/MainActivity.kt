@@ -23,12 +23,13 @@ class MainActivity : AppCompatActivity() {
         val urlString = "https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=066d82458ed84eeeac28a86095ec88b9"
         val request = Request.Builder().url(urlString).build()
 
+        // Third party help: Fetch json object using OKHttpClient
         val client = OkHttpClient()
 
         client.newCall(request).enqueue(object: Callback {
             override fun onResponse(call: Call, response: Response) {
                 val body = response.body?.string()
-                println(body)
+                println("JSON body: $body")
 
                 val gson = GsonBuilder().create()
                 val model = gson.fromJson(body, Model::class.java)
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
             }
             override fun onFailure(call: Call, e: IOException) {
-                println("STILL NOT WORKING")
+                println("Something went wrong fetching json object: ${e.printStackTrace()}")
             }
         })
 

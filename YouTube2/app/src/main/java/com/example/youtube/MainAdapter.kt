@@ -1,18 +1,15 @@
 package com.example.youtube
 
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.video_row.view.*
-import java.text.DateFormat
 import java.text.SimpleDateFormat
-import java.util.*
 
-class MainAdapter(val model: Model): RecyclerView.Adapter<CustomViewHolder>() {
+class MainAdapter(private val model: Model): RecyclerView.Adapter<CustomViewHolder>() {
 
     // Return number of items in the cell
     override fun getItemCount(): Int {
@@ -52,7 +49,7 @@ class MainAdapter(val model: Model): RecyclerView.Adapter<CustomViewHolder>() {
 class CustomViewHolder(view: View, var articles: Articles? = null): RecyclerView.ViewHolder(view) {
 
     companion object {
-        val URL_SITE_LINK = "url_link"
+        const val URL_SITE_LINK = "url_link"
     }
 
     init {
