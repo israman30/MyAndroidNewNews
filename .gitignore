@@ -9,6 +9,8 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+# Permissions
+MyNewNews/app/src/main/java/com/example/newnews/Permission.kt
 
 # Package Files #
 *.jar
