@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.youtube"
+    package="com.example.newnews"
     android:targetSandboxVersion="2"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -22,7 +22,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.youtube.MainActivity"
+            android:name="com.example.newnews.MainActivity"
             android:launchMode="singleTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,17 +31,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.youtube.CourseDetailActivity"
+            android:name="com.example.newnews.CourseDetailActivity"
             android:label="My New News"
             android:launchMode="singleTop" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.example.newnews.MainActivity" />
         </activity>
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.example.youtube.com.squareup.picasso"
+            android:authorities="com.example.newnews.com.squareup.picasso"
             android:exported="false" />
     </application>
 

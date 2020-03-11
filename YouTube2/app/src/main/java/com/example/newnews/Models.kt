@@ -1,4 +1,4 @@
-package com.example.youtube
+package com.example.newnews
 
 
 class Model(val articles: List<Articles>)

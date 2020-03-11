@@ -1,4 +1,4 @@
-package com.example.youtube
+package com.example.newnews
 
 import android.content.Intent
 import android.view.LayoutInflater

@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.youtube"
+3    package="com.example.newnews"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -34,10 +34,10 @@
 22-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:13:9-40
 23        <activity
 23-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:14:9-20:20
-24            android:name="com.example.youtube.MainActivity"
-24-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:14:19-47
+24            android:name="com.example.newnews.MainActivity"
+24-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:14:19-66
 25            android:launchMode="singleTop" >
-25-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:14:48-78
+25-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:14:67-97
 26            <intent-filter>
 26-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:15:13-19:29
 27                <action android:name="android.intent.action.MAIN" />
@@ -51,28 +51,28 @@
 31        </activity>
 32        <activity
 32-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:21:9-26:20
-33            android:name="com.example.youtube.CourseDetailActivity"
-33-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:21:19-55
+33            android:name="com.example.newnews.CourseDetailActivity"
+33-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:21:19-74
 34            android:label="My New News"
 34-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:22:13-40
 35            android:launchMode="singleTop" >
 35-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:23:13-43
 36            <meta-data
-36-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:24:13-25:48
+36-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:24:13-25:67
 37                android:name="android.support.PARENT_ACTIVITY"
 37-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:24:24-70
-38                android:value=".MainActivity" />
-38-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:25:17-46
+38                android:value="com.example.newnews.MainActivity" />
+38-->/Users/israelmanzo/Documents/Repos/MyAndroidNewNews/YouTube2/app/src/main/AndroidManifest.xml:25:17-65
 39        </activity>
 40
 41        <provider
-41-->[com.squareup.picasso:picasso:2.71828] /Users/israelmanzo/.gradle/caches/transforms-2/files-2.1/e5723f83d606f41e916481ce2817c997/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+41-->[com.squareup.picasso:picasso:2.71828] /Users/israelmanzo/.gradle/caches/transforms-2/files-2.1/6bbaf6ecb205dfd5ee578b8c60a07141/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 42            android:name="com.squareup.picasso.PicassoProvider"
-42-->[com.squareup.picasso:picasso:2.71828] /Users/israelmanzo/.gradle/caches/transforms-2/files-2.1/e5723f83d606f41e916481ce2817c997/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
-43            android:authorities="com.example.youtube.com.squareup.picasso"
-43-->[com.squareup.picasso:picasso:2.71828] /Users/israelmanzo/.gradle/caches/transforms-2/files-2.1/e5723f83d606f41e916481ce2817c997/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+42-->[com.squareup.picasso:picasso:2.71828] /Users/israelmanzo/.gradle/caches/transforms-2/files-2.1/6bbaf6ecb205dfd5ee578b8c60a07141/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+43            android:authorities="com.example.newnews.com.squareup.picasso"
+43-->[com.squareup.picasso:picasso:2.71828] /Users/israelmanzo/.gradle/caches/transforms-2/files-2.1/6bbaf6ecb205dfd5ee578b8c60a07141/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
 44            android:exported="false" />
-44-->[com.squareup.picasso:picasso:2.71828] /Users/israelmanzo/.gradle/caches/transforms-2/files-2.1/e5723f83d606f41e916481ce2817c997/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+44-->[com.squareup.picasso:picasso:2.71828] /Users/israelmanzo/.gradle/caches/transforms-2/files-2.1/6bbaf6ecb205dfd5ee578b8c60a07141/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
 45    </application>
 46
 47</manifest>
