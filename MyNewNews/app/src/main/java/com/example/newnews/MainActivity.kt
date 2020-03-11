@@ -2,6 +2,7 @@ package com.example.newnews
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.activity_main.*
@@ -9,6 +10,8 @@ import okhttp3.*
 import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
+
+    private val per = Permission()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getData() {
-        val urlString = "https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=066d82458ed84eeeac28a86095ec88b9"
+        val urlString = "https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=${per.getKey()}"
         val request = Request.Builder().url(urlString).build()
 
         // Third party help: Fetch json object using OKHttpClient
