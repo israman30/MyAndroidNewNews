@@ -7,5 +7,5 @@ class Permission {
     fun getKey() : String {
         return KEY
     }
-    
+
 }
